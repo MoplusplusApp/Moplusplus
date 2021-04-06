@@ -1,5 +1,5 @@
 #include "Moppwindow.h"
-#include "ui_mainwindow.h"
+#include "ui_Moppwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

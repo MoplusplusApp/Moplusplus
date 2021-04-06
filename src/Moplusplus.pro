@@ -12,13 +12,17 @@ SOURCES += \
     Moplusplus.cpp \
     Moppwindow.cpp
 
+
+
+RESOURCES += theme/style.qrc
+
 HEADERS += \
     Moppwindow.h
 
 FORMS += \
     Moppwindow.ui
 
-TARGET = Moplusplus
+TARGET = Mo++
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
