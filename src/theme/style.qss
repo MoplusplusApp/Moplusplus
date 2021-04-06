@@ -1,0 +1,52 @@
+/*
+RESETS
+
+These override default styles, allowing our custom styles to be used instead
+*/
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-style: none;
+  border-image: none;
+  outline: 0;
+}
+
+/*
+APPLICATION FRAME
+
+These set the font, fill, and stroke for the entire application
+*/
+
+QMenuBar {
+    margin: 0px;
+    spacing: 15px; /* spacing between menu bar items */
+    padding-top: 30px;
+    padding-left: 10px;
+    font-family: "Inter";
+}
+
+/* TODO: Make this look more like atom's menu bar
+   Like this - https://github.com/sindrets/atom-title-bar-replacer
+*/
+
+/*
+   Give each element in a QMenuBar some padding
+   and highlight them on hover
+*/
+
+QMenuBar::item {
+    padding: 1px 2px;
+    background: transparent;
+    border-radius: 2px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+    background: #a8a8a8;
+}
+
+QMenuBar::item:pressed {
+    background: #888888;
+}

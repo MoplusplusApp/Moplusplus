@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+# Modify this file to change application UI colors
+
+# This is the main background color
+background: "#21252B"
+
+# This is the separator/divider line color
+divider: "3A3E44"
+
+# This is the button color
+button: "#464C56"
+
+# This is the primary text color
+text-primary: "#CBCED2"
+
+# This is the secondary text color
+text-secondary: "#646971"
