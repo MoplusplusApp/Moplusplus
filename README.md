@@ -7,7 +7,7 @@ This prototype application demonstrates two major experimental functions:
 
 ## UI Mockup
 
-![Mo++ Editor](./assets/MoPlusPlus-Mockup-04-05.png)
+![Mo++ Editor](./assets/MoPlusPlus-Mockup.png)
 
 ## SVG manipulation within a GUI
 
