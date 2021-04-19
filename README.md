@@ -5,6 +5,10 @@ This prototype application demonstrates two major experimental functions:
 1. C++ based SVG manipulation and editing within a GUI
 2. Frame-by-frame based SVG animation
 
+## UI Mockup
+
+![Mo++ Editor](./assets/MoPlusPlus-Mockup-04-05.png)
+
 ## SVG manipulation within a GUI
 
 Traditionally, SVG manipulation has been restricted to either very bulky libraries (e.g. Skia), or to the web (e.g. HTML/CSS). Mo++ aims to take an alternative approach to SVG manipulation, whereby a lightweight custom-made library can be used to manipulate vector graphics - importantly, an approach that is platform and framework-independent.
