@@ -2,7 +2,7 @@
 # ---------------------------------
 
 # Folders
-src/build*
+build*
 
 # Prerequisites
 *.d
