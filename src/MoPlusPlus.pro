@@ -2,6 +2,8 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+requires(qtConfig(filedialog))
+
 CONFIG += c++11
 
 # You can make your code fail to compile if it uses deprecated APIs.
@@ -10,10 +12,15 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    moplusplusmain.cpp
+    moplusplusmain.cpp \
+    ui_moplusplusmain.cpp
 
 HEADERS += \
-    moplusplusmain.h
+    moplusplusmain.h \
+    ui_moplusplusmain.h
+
+RESOURCES += \
+    resources.qrc
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

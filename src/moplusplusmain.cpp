@@ -1,11 +1,76 @@
 #include "moplusplusmain.h"
+#include "ui_moplusplusmain.h"
 
-MoPlusPlusMain::MoPlusPlusMain(QWidget *parent)
-    : QMainWindow(parent)
+#include <QApplication>
+#include <QFile>
+#include <QTextStream>
+#include <QFont>
+#include <QTextBrowser>
+#include <QLabel>
+
+
+
+Window::Window()
 {
-}
+    // Set the window title and description
+    setWindowTitle("Mo++ Editor");
 
-MoPlusPlusMain::~MoPlusPlusMain()
+    // Set minimum window size
+    setMinimumSize(900, 650);
+
+//    // Create menu bar
+//    QMenuBar * menuBar = new QMenuBar(this);
+
+//    // -- File menu items --
+//    menuBar->addMenu("&File");
+
+//    // -- Edit menu items --
+//    menuBar->addMenu("&Edit");
+
+//    // -- View menu items --
+//    menuBar->addMenu("&View");
+
+//    // -- Tools menu items --
+//    menuBar->addMenu("&Tools");
+
+//    // -- Help menu items --
+//    menuBar->addMenu("&Help");
+
+    // Set preferred size of 1280 x 720
+    resize(1280, 720);
+
+    // Set global font
+    QFont font ("Inter Medium");
+    font.setPointSize(10);
+    font.setBold(false);
+    font.setItalic(false);
+    qApp -> setFont(font);
+
+    // Set stylesheet, located at ./theme/style.qss
+    QFile f(":style.qss");
+    f.open(QFile::ReadOnly | QFile::Text);
+    QTextStream ts(&f);
+    qApp -> setStyleSheet(ts.readAll());
+
+    // Create main layout
+
+    // Central Widget is a QTextbrowser for now, will change to a custom canvas based on VecFX later
+    QTextBrowser *centralWidget = new QTextBrowser;
+    centralWidget->setPlainText(tr("Canvas Area"));
+
+    BorderLayout *layout = new BorderLayout;
+    layout->addWidget(centralWidget, BorderLayout::Center);
+    layout->addWidget(createLabel("Menu Bar"), BorderLayout::North);
+    layout->addWidget(createLabel("Left Sidebar"), BorderLayout::West);
+    layout->addWidget(createLabel("Right Properties Panel"), BorderLayout::East);
+    setLayout(layout);
+};
+
+// Defines createLabel function
+// Simplifies layout
+QLabel *Window::createLabel(const QString &text)
 {
+    QLabel *label = new QLabel(text);
+    label->setFrameStyle(QFrame::Box | QFrame::Raised);
+    return label;
 }
-

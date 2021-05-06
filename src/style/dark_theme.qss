@@ -1,0 +1,21 @@
+/* Default dark theme for Mo++ */
+
+QWidget{
+        color: rgb(221, 221, 221);
+        background-color: #21252B;
+        font: 10pt "Inter";
+}
+
+QToolTip {
+        color: #ffffff;
+        background-color: rgba(33, 37, 43, 180);
+        border: 1px solid rgb(44, 49, 58);
+        background-image: none;
+        background-position: left center;
+    background-repeat: no-repeat;
+        border: none;
+        border-left: 2px solid rgb(255, 121, 198);
+        text-align: left;
+        padding-left: 8px;
+        margin: 0px;
+}
