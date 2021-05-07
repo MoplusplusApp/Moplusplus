@@ -1,5 +1,12 @@
 <RCC>
-    <qresource>
-        <file>style/dark_theme.qss</file>
-    </qresource>
+  <qresource prefix="icons">
+    <file>images/icons/icon_select_tool.png</file>
+    <file>images/icons/icon_pen_tool.png</file>
+    <file>images/icons/icon_pan_tool.png</file>
+    <file>images/icons/icon_zoom_tool.png</file>
+    <file>images/icons/icon_settings.png</file>
+  </qresource>
+  <qresource prefix="logos">
+    <file>images/logos/moplusplus-logo.png</file>
+  </qresource>
 </RCC>
