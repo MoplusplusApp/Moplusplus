@@ -1,22 +1,23 @@
 #ifndef MOPLUSPLUSMAIN_H
 #define MOPLUSPLUSMAIN_H
 
-#include <QWidget>
 #include <QMainWindow>
+#include "ui_moplusplusmain.h"
 
 QT_BEGIN_NAMESPACE
-class QLabel;
+namespace Ui { class MoPlusPlusMain; }
 QT_END_NAMESPACE
 
-class Window : public QWidget
+class MoPlusPlusMain : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    Window();
+    MoPlusPlusMain(QWidget *parent = nullptr);
+    ~MoPlusPlusMain();
 
 private:
-    QLabel *createLabel(const QString &text);
+    Ui::MoPlusPlusMain *ui;
 };
 
 #endif // MOPLUSPLUSMAIN_H

@@ -1,15 +1,19 @@
 #include "moplusplusmain.h"
+#include "ui_moplusplusmain.h"
 
 #include <QApplication>
+#include <QStyleFactory>
 
 // This file should stay unmodified
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    Window w;
+    QApplication app(argc, argv);
+    MoPlusPlusMain win;
+    // Set default style to Lightly
+    // qApp->setStyle(QStyleFactory::create("Lightly"));
     // Show window
-    w.show();
+    win.show();
     // Enter into event loop
-    return a.exec();
+    return app.exec();
 }
