@@ -12,15 +12,18 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    moplusplusmain.cpp \
-    ui_moplusplusmain.cpp
+    moplusplusmain.cpp
 
 HEADERS += \
-    moplusplusmain.h \
-    ui_moplusplusmain.h
+    moplusplusmain.h
+
+FORMS += \
+    moplusplusmain.ui
 
 RESOURCES += \
     resources.qrc
+
+TARGET = Mo++
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
