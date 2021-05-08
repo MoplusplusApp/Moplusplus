@@ -38,20 +38,16 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">/* /////////////////////////////////////////////////////////////////////////////////////////////////
+    <string notr="true">/* Stylesheet built on (and heavily based off of) https://github.com/Wanderson-Magalhaes/Modern_GUI_PyDracula_PySide6_or_PyQt6
 
-SET APP STYLESHEET - FULL STYLES HERE
-DARK THEME - DRACULA COLOR BASED
-
-///////////////////////////////////////////////////////////////////////////////////////////////// */
+Thank you very much for the excellent stylesheet! */
 
 QWidget{
 	color: rgb(221, 221, 221);
 	font: 10pt &quot;Segoe UI&quot;;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Tooltip */
+/*Tooltip */
 QToolTip {
 	color: #ffffff;
 	background-color: rgba(33, 37, 43, 180);
@@ -66,8 +62,7 @@ QToolTip {
 	margin: 0px;
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Bg App */
+/* bgApp */
 #bgApp {	
 	background-color: rgb(40, 44, 52);
 }
@@ -77,16 +72,13 @@ Bg App */
 	background-color: rgb(33, 37, 43);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Left Menu */
+/* Left Menu */
 #topLogo {
 	background-color: rgb(33, 37, 43);
 	background-image: url(:/images/images/images/PyDracula.png);
 	background-position: centered;
 	background-repeat: no-repeat;
 }
-#titleLeftApp { font: 63 12pt &quot;Segoe UI Semibold&quot;; }
-#titleLeftDescription { font: 8pt &quot;Segoe UI&quot;; color: rgb(189, 147, 249); }
 
 /* MENUS */
 #topMenu .QPushButton {	
@@ -139,10 +131,6 @@ Left Menu */
 #toggleButton:pressed {
 	background-color: rgb(189, 147, 249);
 }
-
-/* Title Menu */
-#titleRightInfo { padding-left: 10px; }
-
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////
 Extra Tab */
