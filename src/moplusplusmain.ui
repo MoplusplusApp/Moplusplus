@@ -1018,7 +1018,7 @@ padding-left: 30px;
 padding-right: 30px;
 padding-top: 15px;
 padding-bottom: 15px;
-border-width: 0.5px;
+border-width: 0px;
 border-style: solid;
 border-color: #9e9e9e;
 border-radius: 4px;
