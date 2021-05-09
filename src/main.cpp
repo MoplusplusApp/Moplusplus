@@ -10,8 +10,8 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     MoPlusPlusMain win;
-    // Set default style to Lightly
-    // qApp->setStyle(QStyleFactory::create("Lightly"));
+    // Set default style to Fusion
+    qApp->setStyle(QStyleFactory::create("Fusion"));
     // Show window
     win.show();
     // Enter into event loop
