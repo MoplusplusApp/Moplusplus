@@ -38,13 +38,16 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">/* Stylesheet built on (and heavily based off of) https://github.com/Wanderson-Magalhaes/Modern_GUI_PyDracula_PySide6_or_PyQt6
+    <string notr="true">/* Edit stylesheet to customize UI look 
+
+Stylesheet built on (and heavily based off of) https://github.com/Wanderson-Magalhaes/Modern_GUI_PyDracula_PySide6_or_PyQt6
 
 Thank you very much for the excellent stylesheet! */
 
 QWidget{
 	color: rgb(221, 221, 221);
 	font: 10pt &quot;Segoe UI&quot;;
+    background-image: none;
 }
 
 /*Tooltip */
@@ -60,6 +63,10 @@ QToolTip {
 	text-align: left;
 	padding-left: 8px;
 	margin: 0px;
+}
+
+QPushButton QToolTip {
+background-image: none;
 }
 
 /* bgApp */
@@ -132,8 +139,7 @@ QToolTip {
 	background-color: rgb(189, 147, 249);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Extra Tab */
+/* Extra Tab */
 #extraLeftBox {	
 	background-color: rgb(44, 49, 58);
 }
@@ -176,8 +182,7 @@ background-position: left center;
 	color: rgb(255, 255, 255);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Content App */
+/* Content App */
 #contentTopBg{	
 	background-color: rgb(33, 37, 43);
 }
@@ -217,8 +222,7 @@ Content App */
 	color: rgb(255, 255, 255);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-QTableWidget */
+/* QTableWidget */
 QTableWidget {	
 	background-color: transparent;
 	padding: 10px;
@@ -259,47 +263,7 @@ QHeaderView::section:vertical
     border: 1px solid rgb(44, 49, 60);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-LineEdit */
-QLineEdit {
-	background-color: rgb(33, 37, 43);
-	border-radius: 5px;
-	border: 2px solid rgb(33, 37, 43);
-	padding-left: 10px;
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgb(255, 121, 198);
-}
-QLineEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
-}
-QLineEdit:focus {
-	border: 2px solid rgb(91, 101, 124);
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-PlainTextEdit */
-QPlainTextEdit {
-	background-color: rgb(27, 29, 35);
-	border-radius: 5px;
-	padding: 10px;
-	selection-color: rgb(255, 255, 255);
-	selection-background-color: rgb(255, 121, 198);
-}
-QPlainTextEdit  QScrollBar:vertical {
-    width: 8px;
- }
-QPlainTextEdit  QScrollBar:horizontal {
-    height: 8px;
- }
-QPlainTextEdit:hover {
-	border: 2px solid rgb(64, 71, 88);
-}
-QPlainTextEdit:focus {
-	border: 2px solid rgb(91, 101, 124);
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-ScrollBars */
+/* ScrollBars */
 QScrollBar:horizontal {
     border: none;
     background: rgb(52, 59, 72);
@@ -376,8 +340,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
      background: none;
  }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-CheckBox */
+/* CheckBox */
 QCheckBox::indicator {
     border: 3px solid rgb(52, 59, 72);
 	width: 15px;
@@ -394,8 +357,7 @@ QCheckBox::indicator:checked {
 	background-image: url(:/icons/images/icons/cil-check-alt.png);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-RadioButton */
+/* RadioButton */
 QRadioButton::indicator {
     border: 3px solid rgb(52, 59, 72);
 	width: 15px;
@@ -411,8 +373,7 @@ QRadioButton::indicator:checked {
 	border: 3px solid rgb(52, 59, 72);	
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-ComboBox */
+/* ComboBox */
 QComboBox{
 	background-color: rgb(27, 29, 35);
 	border-radius: 5px;
@@ -443,8 +404,7 @@ QComboBox QAbstractItemView {
 	selection-background-color: rgb(39, 44, 54);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Sliders */
+/* Sliders */
 QSlider::groove:horizontal {
     border-radius: 5px;
     height: 10px;
@@ -493,25 +453,7 @@ QSlider::handle:vertical:pressed {
     background-color: rgb(255, 121, 198);
 }
 
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-CommandLinkButton */
-QCommandLinkButton {	
-	color: rgb(255, 121, 198);
-	border-radius: 5px;
-	padding: 5px;
-	color: rgb(255, 170, 255);
-}
-QCommandLinkButton:hover {	
-	color: rgb(255, 170, 255);
-	background-color: rgb(44, 49, 60);
-}
-QCommandLinkButton:pressed {	
-	color: rgb(189, 147, 249);
-	background-color: rgb(52, 58, 71);
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////////
-Button */
+/*Button */
 #pagesContainer QPushButton {
 	border: 2px solid rgb(52, 59, 72);
 	border-radius: 5px;	
@@ -1070,12 +1012,17 @@ letter-spacing: 1.5px;
 font-size: 9pt;
 }
 
+/* Styles for operations buttons */
 QPushButton {
 padding-left: 30px;
 padding-right: 30px;
 padding-top: 15px;
 padding-bottom: 15px;
-background color: rg(70, 76, 86);
+border-width: 0.5px;
+border-style: solid;
+border-color: #9e9e9e;
+border-radius: 4px;
+background-color: rgb(70, 76, 86);
 }</string>
          </property>
          <layout class="QVBoxLayout" name="rightPropertiesEditor">
@@ -1213,6 +1160,9 @@ font-size: 9pt;
 margin-right: 30px;
 font-size: 9pt;
 }</string>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
    </property>
    <widget class="QMenu" name="menuFiles">
     <property name="styleSheet">
