@@ -5,7 +5,7 @@ This prototype application demonstrates two major experimental functions:
 1. C++ based SVG manipulation and editing within a GUI
 2. Frame-by-frame based SVG animation with keyframe support
 
-![Mo++ Editor](./assets/MoPlusPlus-Screenshot.png)
+![Mo++ Editor](./assets/MoPlusPlus-Mockup.png)
 
 The goal is to build a feature-rich and open-source SVG editor that makes creating motion graphics easy and intuitive, leveraging the power and speed of C++ and the flexibility of the Qt UI framework.
 
@@ -28,9 +28,3 @@ SVG animation tools typically rely on either the `<animate>` tag or embedded CSS
 ## What's in the name?
 
 Mo++ stands for "Motion Graphics in C++".
-
-## UI Mockup
-
-These are concepts for Mo++'s user interface.
-
-![Mo++ Editor](./assets/MoPlusPlus-Mockup.png)
