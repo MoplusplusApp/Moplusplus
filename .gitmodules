@@ -1,0 +1,3 @@
+[submodule "src/VecFX"]
+	path = src/VecFX
+	url = https://github.com/PhantomzBack/VecFX
