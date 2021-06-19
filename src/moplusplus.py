@@ -10,11 +10,10 @@
 
 """
 Filename:
-    svg_to_yaml.py
+    moplusplus.py
 
 Function:
-    Generates boilerplate YAML based on icons placed in the
-    `blender-icons/sets/Lcn-NIS8Eh8o/` folder
+    Initializes and runs Mo++
 
 Important notes:
     - Code should be formatted by black and checked for bugs by pylint
