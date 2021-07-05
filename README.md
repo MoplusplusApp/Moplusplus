@@ -9,6 +9,8 @@ This prototype application demonstrates two major experimental functions:
 
 The goal is to build a feature-rich and open-source SVG editor that makes creating motion graphics easy and intuitive, leveraging the power and speed of C++ and the flexibility of the Qt UI framework.
 
+See [install instructions](INSTALL.md) and [documentation](#) to get started.
+
 ## SVG manipulation within a GUI
 
 Traditionally, SVG manipulation has been restricted to either very bulky libraries (e.g. Skia), or to the web (e.g. HTML/CSS). Mo++ aims to take an alternative approach to SVG manipulation, whereby a lightweight custom-made library can be used to manipulate vector graphics - importantly, an approach that is platform and framework-independent.
